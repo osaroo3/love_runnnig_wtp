@@ -148,6 +148,25 @@ main {
     padding: 0 20px;
 }
 
+/*make reasons section responsive*/
+#circle-cover-bg {
+    background: url("../images/reasons-image.webp") no-repeat top center/cover;
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /*make the square image into a circle*/
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-Content: center;
+}
+
 /* footer content*/
 #social-networks {
     text-align: center;
