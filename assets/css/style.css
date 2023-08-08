@@ -26,8 +26,9 @@ h3 {
     letter-spacing: 2px;
     color: #252525;
 }
+
 .hidden-heading {
-    display:none;
+    display: none;
 }
 
 /* header content*/
@@ -194,6 +195,16 @@ main {
 #times h3 {
     /*overides the heading colour set in the general styles*/
     color: #fafafa;
+}
+
+/*Gallery page*/
+#photos img {
+    width: 100%;
+    line-height: 1;
+}
+
+#photos {
+    line-height: 0;
 }
 
 /* footer content*/
