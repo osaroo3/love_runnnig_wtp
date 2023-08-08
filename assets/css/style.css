@@ -222,6 +222,15 @@ main {
     color: #3a3a3a;
 }
 
+/*Media query: Large and lanscape phone(576px and up)*/
+@media screen and (min-width:576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+
+}
+
 /*Media query: tablets and larger(768px and up)*/
 @media screen and (min-width:768px) {
 
@@ -283,34 +292,41 @@ main {
         align-self: flex-end;
     }
 
-}
-
-/*Large devices (laptops and desktops:992px and up)*/
-@media screen and (min-width:992px) {
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
-    }
-}
-
-/*Large devices (laptops and desktops:1200px and up)*/
-@media screen and (min-width:1200px) {
-    #benefits {
-        display: flex;
-        gap: 5px;
-        width: 100%;
-
+    /*Gallery*/
+    #photos {
+        column-count: 3;
     }
 
-    #benefits-image {
-        align-self: center;
-        flex-basis: 1000px;
+    /*Large devices (laptops and desktops:992px and up)*/
+    @media screen and (min-width:992px) {
+        #menu a:hover {
+            border-bottom: 1px solid #3a3a3a;
+        }
+
+        #photos {
+            column-count: 4;
+        }
     }
 
-    #benifit-physical {
-        order: -1;
-    }
+    /*Large devices (laptops and desktops:1200px and up)*/
+    @media screen and (min-width:1200px) {
+        #benefits {
+            display: flex;
+            gap: 5px;
+            width: 100%;
 
-    #benefit-mental {
-        order: 3;
+        }
+
+        #benefits-image {
+            align-self: center;
+            flex-basis: 1000px;
+        }
+
+        #benifit-physical {
+            order: -1;
+        }
+
+        #benefit-mental {
+            order: 3;
+        }
     }
-}
